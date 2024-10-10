@@ -11,18 +11,21 @@ export const siteConfig = {
       cor: "Golden",
       preco: "$999.00",
       quantidade: "x 1",
+      img: "/images/Gold.png",
     },
     produto2: {
       nome: "Apple Watch",
       cor: "Blue",
       preco: "$399.00",
       quantidade: "x 1",
+      img: "/images/Blue.png",
     },
     produto3: {
       nome: "iMac",
       cor: "Green",
       preco: "$1199.00",
       quantidade: "x 1",
+      img: "/images/iMacFront1.png",
     },
   },
   total: {

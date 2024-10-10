@@ -3,6 +3,7 @@ import { IoClose } from "react-icons/io5";
 import Header from "@/components/header";
 import DefaultLayout from "@/layouts/default";
 import Produto from "@/components/checkout/produto";
+import { siteConfig } from "@/config/site";
 
 export default function IndexPage() {
   return (
@@ -14,31 +15,16 @@ export default function IndexPage() {
         <Header />
         <div className="z-10 w-full h-full flex flex-col rounded-2xl bg-[#FFFFFF] overflow-hidden">
           <div className="flex flex-col bg-[#E6E7EB] gap-5 py-5 px-7">
-            <Produto
-              cor="Golden"
-              icone={IoClose}
-              img="/images/Gold.png"
-              nome="iPhone 12 Pro"
-              preco="$999.00"
-              quantidade="x 1"
-            />
-            <Produto
-              cor="Golden"
-              icone={IoClose}
-              img="/images/iMacFront1.png"
-              nome="iPhone 12 Pro"
-              preco="$999.00"
-              quantidade="x 1"
-            />
-            <Produto
-              cor="Golden"
-              icone={IoClose}
-              img="/images/Gold.png"
-              nome="iPhone 12 Pro"
-              preco="$999.00"
-              quantidade="x 1"
-            />
-
+            {Object.entries(siteConfig.produtos).map(([key, produto]) => (
+              <Produto
+                key={key}
+                cor={produto.cor}
+                img={produto.img}
+                nome={produto.nome}
+                preco={produto.preco}
+                quantidade={produto.quantidade}
+              />
+            ))}
             <hr className="border-[#0000001a]" />
           </div>
         </div>

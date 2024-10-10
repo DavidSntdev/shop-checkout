@@ -1,5 +1,5 @@
 import { Image } from "@nextui-org/image";
-import { ElementType } from "react";
+import { IoClose } from "react-icons/io5";
 
 import Text from "../shared/text";
 
@@ -9,7 +9,6 @@ interface ProdutosProps {
   cor: string;
   preco: string;
   quantidade: string;
-  icone: ElementType;
 }
 export default function Produto(props: ProdutosProps) {
   return (
@@ -31,7 +30,7 @@ export default function Produto(props: ProdutosProps) {
             font="semibold"
             text={props.quantidade}
           />
-          <Text className="text-[#898E99]" font="semibold" text={props.icone} />
+          <Text className="text-[#898E99]" font="semibold" text={IoClose} />
         </div>
       </div>
     </div>
