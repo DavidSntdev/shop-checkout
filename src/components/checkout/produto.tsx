@@ -20,17 +20,17 @@ export default function Produto(props: ProdutosProps) {
         <div className="flex justify-between">
           <div>
             <Text font="semibold" text={props.nome} />
-            <Text className="text-[#898E99]" font="semibold" text={props.cor} />
+            <Text className="text-[#6C727F]" font="semibold" text={props.cor} />
           </div>
           <Text font="semibold" text={props.preco} />
         </div>
         <div className="flex justify-between items-center">
           <Text
-            className="text-[#898E99]"
+            className="text-[#6C727F]"
             font="semibold"
             text={props.quantidade}
           />
-          <Text className="text-[#898E99]" font="semibold" text={IoClose} />
+          <Text className="text-[#6C727F]" font="semibold" text={IoClose} />
         </div>
       </div>
     </div>
