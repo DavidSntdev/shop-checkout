@@ -1,13 +1,17 @@
+import { ElementType } from "react";
+
 interface TextProps {
-  text: string;
+  text: string | ElementType;
   font: "normal" | "medium" | "semibold";
   className?: string;
 }
 
-export default function TextProps(props: TextProps) {
+export default function Text({ text, font, className }: TextProps) {
+  const TextComponent = typeof text === "string" ? "span" : text;
+
   return (
-    <p className={`font-${props.font} text-[16px] ${props.className}`}>
-      {props.text}
+    <p className={`font-${font} text-[16px] ${className} flex`}>
+      {typeof text === "string" ? text : <TextComponent className="size-6" />}
     </p>
   );
 }
