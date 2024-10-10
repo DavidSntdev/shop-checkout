@@ -1,7 +1,7 @@
-import { Image } from "@nextui-org/image";
 import { IoClose } from "react-icons/io5";
+import { Image } from "@nextui-org/image";
 
-import Text from "../shared/text";
+import Text from "@/components/shared/text";
 
 interface ProdutosProps {
   img: string;
