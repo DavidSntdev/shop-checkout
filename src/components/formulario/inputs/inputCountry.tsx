@@ -1,5 +1,5 @@
-import Text from "../shared/text";
 
+import Text from "@/components/shared/text";
 import { siteConfig } from "@/config/site";
 
 export default function InputCountry() {

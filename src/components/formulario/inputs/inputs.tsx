@@ -1,4 +1,4 @@
-import Text from "../shared/text";
+import Text from "@/components/shared/text";
 
 interface InputsProps {
   label: string;

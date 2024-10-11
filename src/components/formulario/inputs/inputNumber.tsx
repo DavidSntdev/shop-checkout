@@ -1,8 +1,8 @@
-import Text from "../shared/text";
 
+import Text from "@/components/shared/text";
 import { siteConfig } from "@/config/site";
 
-export default function InputNumber(props: any) {
+export default function InputNumber() {
   return (
     <div className="flex flex-col w-1/2 gap-2">
       <label htmlFor="number">
@@ -16,6 +16,7 @@ export default function InputNumber(props: any) {
       <input
         className="h-12 w-full p-3 border-1 border-[#00000033] rounded-lg"
         id="number"
+        placeholder={siteConfig.formulario.inputsLocal.input2.inputText}
         type="number"
       />
     </div>
