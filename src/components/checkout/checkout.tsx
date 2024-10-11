@@ -6,7 +6,7 @@ import { siteConfig } from "@/config/site";
 
 export default function Checkout() {
   return (
-    <div className="flex flex-col bg-[#E6E7EB] gap-7 py-10 px-7">
+    <div className="flex flex-col lg:w-1/2 bg-[#E6E7EB] gap-7 py-10 px-7">
       {Object.entries(siteConfig.produtos).map(([key, produto]) => (
         <Produto
           key={key}

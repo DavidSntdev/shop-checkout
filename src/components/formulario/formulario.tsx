@@ -10,7 +10,7 @@ import { siteConfig } from "@/config/site";
 
 export default function Formulario() {
   return (
-    <div className="flex flex-col gap-7 py-7 pb-0 px-7">
+    <div className="flex flex-col lg:w-1/2 gap-7 py-7 pb-0 px-7">
       <Text font="semibold" text={siteConfig.formulario.titulo} />
       {Object.entries(siteConfig.formulario.text).map(([key, input]) => (
         <Inputs key={key} input={input.inputText} label={input.label} />
