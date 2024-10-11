@@ -1,4 +1,3 @@
-
 import Produto from "./produtos/produto";
 import Cupom from "./total/cupom";
 import TotalText from "./total/totalText";
@@ -7,7 +6,7 @@ import { siteConfig } from "@/config/site";
 
 export default function Checkout() {
   return (
-    <div className="flex flex-col bg-[#E6E7EB] gap-5 py-10 px-7">
+    <div className="flex flex-col bg-[#E6E7EB] gap-7 py-10 px-7">
       {Object.entries(siteConfig.produtos).map(([key, produto]) => (
         <Produto
           key={key}
@@ -22,20 +21,14 @@ export default function Checkout() {
       <div className="flex flex-col gap-4">
         <Cupom />
         <div className="flex flex-col gap-1">
-          <TotalText
-            cor="text-[#6C727F]"
-            nome={siteConfig.total.subtotal}
-            preco={siteConfig.total.precos.subtotal}
-          />
-          <TotalText
-            cor="text-[#6C727F]"
-            nome={siteConfig.total.tax}
-            preco={siteConfig.total.precos.tax}
-          />
-          <TotalText
-            nome={siteConfig.total.total}
-            preco={siteConfig.total.precos.total}
-          />
+          {Object.entries(siteConfig.total.textos).map(([key, total]) => (
+            <TotalText
+              key={key}
+              cor={total.cor}
+              nome={total.nome}
+              preco={total.preco}
+            />
+          ))}
         </div>
       </div>
     </div>

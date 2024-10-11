@@ -33,13 +33,22 @@ export const siteConfig = {
       inputText: "Enter coupon code",
       botaoText: "Apply Coupon",
     },
-    subtotal: "Sub total",
-    tax: "Tax",
-    total: "Total",
-    precos: {
-      subtotal: "$2597.00",
-      tax: "$623.28",
-      total: "$3220.28",
+    textos: {
+      subTotal: {
+        nome: "Subtotal",
+        preco: "$2597.00",
+        cor: "#6C727F",
+      },
+      tax: {
+        nome: "Tax",
+        preco: "$623.28",
+        cor: "#6C727F",
+      },
+      total: {
+        nome: "Total",
+        preco: "$3220.28",
+        cor: "",
+      },
     },
   },
 
