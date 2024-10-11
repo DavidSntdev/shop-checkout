@@ -12,7 +12,7 @@ export default function Text(props: TextProps) {
 
   return (
     <p
-      className={`font-${props.font} text-[16px] text-[${props.cor || "#1D1D1F"}] ${props.className} flex`}
+      className={`font-${props.font} text-[16px] ${props.cor || "text-[#1D1D1F]"} ${props.className} flex`}
     >
       {typeof props.text === "string" ? (
         props.text

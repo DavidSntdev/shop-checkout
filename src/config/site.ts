@@ -37,12 +37,12 @@ export const siteConfig = {
       subTotal: {
         nome: "Subtotal",
         preco: "$2597.00",
-        cor: "#6C727F",
+        cor: "text-[#6C727F]",
       },
       tax: {
         nome: "Tax",
         preco: "$623.28",
-        cor: "#6C727F",
+        cor: "text-[#6C727F]",
       },
       total: {
         nome: "Total",
