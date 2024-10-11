@@ -8,7 +8,7 @@ export default function DefaultLayout({
   return (
     <div className="relative flex flex-col h-screen bg-[#F3F4F6]">
       <main className="container mx-auto max-w-7xl flex-grow">{children}</main>
-      <footer className="w-full flex items-center justify-center py-3">
+      <footer className="w-full flex items-center justify-center py-3 border-t-1 border-[#00000033] bg-[#F3F4F6]">
         <Link
           isExternal
           className="flex items-center gap-1 text-current"
